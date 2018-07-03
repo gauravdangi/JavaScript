@@ -114,10 +114,8 @@ function showCart(){
 // ---------------- remove course from cart ---------------
 function removeCourseFromCart(e){
   if(e.target.classList.contains('romove')){
-    //console.log(e.target.parentElement.parentElement);
     const course = e.target.parentElement.parentElement;
     const name = course.querySelectorAll('td')[1].textContent;
-    console.log(name);
     const id = course.querySelector('a').getAttribute('data-id');
     removeCourse(name,id);
     e.target.parentElement.parentElement.remove();
