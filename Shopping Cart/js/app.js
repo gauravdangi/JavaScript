@@ -139,8 +139,7 @@ function removeCourse(name,id){
 
 // remove everything from cart
 function clearCart(){
-  let courses = [];
-  setCoursesToStorage(courses);
+  cleanLocalStorageForCart();
   clear();
 }
 
